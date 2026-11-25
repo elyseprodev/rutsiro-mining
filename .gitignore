@@ -1,0 +1,25 @@
+# Environment / secrets
+.env
+config/.env
+
+# Uploads (keep folder, ignore files)
+uploads/*
+!uploads/.gitkeep
+!uploads/.htaccess
+
+# Local assets dropped by designers (keep tracked images in git)
+# assets/images/*  <-- uncomment if you want to ignore local drops
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# Logs / temp
+*.log
+/tmp/
+
+# PHP / XAMPP local
+vendor/

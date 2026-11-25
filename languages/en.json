@@ -1,0 +1,5 @@
+{
+  "site": { "name": "RUTSIRO MINING LTD", "tagline": "Reliable Mineral Supply from Rwanda to the World." },
+  "nav": { "home": "Home", "about": "About Us", "minerals": "Our Minerals", "how": "How It Works", "careers": "Careers", "contact": "Contact", "quote": "Request a Quote" },
+  "common": { "learn_more": "Learn More", "explore": "Explore Our Minerals", "view_jobs": "View Job Opportunities", "apply_now": "Apply Now" }
+}

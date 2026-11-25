@@ -1,0 +1,28 @@
+# RUTSIRO MINING LTD — Root .htaccess (Phase 1)
+# Enable compression + caching for static assets
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css application/javascript application/json image/svg+xml
+</IfModule>
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+  ExpiresByType image/jpeg "access plus 3 months"
+  ExpiresByType image/png "access plus 3 months"
+  ExpiresByType image/webp "access plus 3 months"
+</IfModule>
+
+# Security headers
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+  Header set X-Frame-Options "SAMEORIGIN"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+# Hide PHP version in php.ini: expose_php = Off
+
+# Directory listing off
+Options -Indexes
+
+# Default charset
+AddDefaultCharset UTF-8

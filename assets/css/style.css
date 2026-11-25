@@ -1,0 +1,41 @@
+/* ============================================================
+   RUTSIRO MINING LTD — style.css (Phase 1 foundation)
+   Brand palette (locked): Navy #082D59 / Deep #062449 /
+   Royal #1555A0 / Gold #F5B916 / BG #F4F7FC / Text #182B45
+   Full homepage design arrives in Phase 2 — do not restyle
+   the reference design without approval.
+   ============================================================ */
+:root{
+  --navy:#082D59; --navy-deep:#062449; --royal:#1555A0;
+  --gold:#F5B916; --gold-dark:#D99E06;
+  --bg:#F4F7FC; --text:#182B45; --muted:#5A6B84;
+  --radius:14px; --shadow:0 10px 30px rgba(8,45,89,.10);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:'Inter',system-ui,sans-serif;color:var(--text);background:#fff;line-height:1.6}
+h1,h2,h3,h4{font-family:'Poppins','Inter',sans-serif;color:var(--navy);line-height:1.2}
+a{color:var(--royal);text-decoration:none}
+a:hover{text-decoration:underline}
+img{max-width:100%;height:auto;display:block}
+.container{width:min(1200px,92%);margin-inline:auto}
+
+/* Header / footer placeholders (Phase 2 replaces with reference design) */
+.site-header{background:#fff;border-bottom:1px solid #E3EAF4;position:sticky;top:0;z-index:100}
+.site-header nav a{margin:0 .35rem;color:var(--navy);font-weight:600;font-size:.95rem}
+.site-footer{background:var(--navy-deep);color:#fff}
+.site-footer small{color:#C7D6EC}
+
+/* Buttons */
+.btn{display:inline-block;padding:.65rem 1.4rem;border-radius:999px;font-weight:700;border:2px solid transparent;transition:.2s}
+.btn-gold{background:var(--gold);color:var(--navy-deep)}
+.btn-gold:hover{background:var(--gold-dark);text-decoration:none}
+.btn-navy{background:var(--navy);color:#fff}
+.btn-navy:hover{background:var(--navy-deep);text-decoration:none}
+.btn-outline{background:transparent;border-color:#fff;color:#fff}
+.btn-outline:hover{background:rgba(255,255,255,.12);text-decoration:none}
+
+/* Phase 1 placeholder banner */
+.phase-banner{background:var(--bg);border:1px dashed var(--royal);border-radius:var(--radius);padding:2rem;box-shadow:var(--shadow)}
+.phase-banner .badge{background:var(--gold);color:var(--navy-deep);font-weight:800;padding:.25rem .7rem;border-radius:999px;font-size:.8rem}
+.phase-banner code{background:#EAF0FA;padding:.1rem .4rem;border-radius:6px}

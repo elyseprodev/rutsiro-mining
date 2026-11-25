@@ -1,0 +1,2 @@
+# Private uploads: downloads must eventually use an authorized PHP handler.
+Require all denied
